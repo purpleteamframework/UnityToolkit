@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Team Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Purple Team Toolkit</h1>
+        <nav>
+            <a href="#tools">Tools</a>
+            <a href="#commands">Commands</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="tools">
+            <h2>Tools</h2>
+            <div class="filters">
+                <label for="os">Operating System:</label>
+                <select id="os" onchange="filterTools()">
+                    <option value="all">All</option>
+                    <option value="windows">Windows</option>
+                    <option value="linux">Linux</option>
+                    <option value="mac">Mac</option>
+                </select>
+                <label for="attackType">Attack Type:</label>
+                <select id="attackType" onchange="filterTools()">
+                    <option value="all">All</option>
+                    <option value="enumeration">Enumeration</option>
+                    <option value="exploitation">Exploitation</option>
+                    <option value="persistence">Persistence</option>
+                    <option value="privilegeEscalation">Privilege Escalation</option>
+                </select>
+            </div>
+            <div id="toolsList">
+                <!-- List of tools will be dynamically inserted here -->
+            </div>
+        </section>
+        <section id="commands">
+            <h2>Commands</h2>
+            <div id="commandsList">
+                <!-- List of commands will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <p>Contact: <a href="mailto:info@purpleteamtoolkit.com">info@purpleteamtoolkit.com</a></p>
+        <p><a href="https://github.com/your-repo-link">Contribute on GitHub</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
